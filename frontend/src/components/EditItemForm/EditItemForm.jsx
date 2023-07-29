@@ -41,6 +41,7 @@ export default function EditItemForm({ getItem, currentItem, setCurrentItem, fet
       />
       <input
         type="number"
+        min='0'
         name="quantity"
         defaultValue={currentItem.quantity}
         onChange={handleChange}

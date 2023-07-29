@@ -76,7 +76,7 @@ export default class SignUpForm extends Component {
               required
             />
             </label>
-            <button type="submit" disabled={disable}>
+            <button type="submit" className='button' disabled={disable}>
               SIGN UP
             </button>
           </form>

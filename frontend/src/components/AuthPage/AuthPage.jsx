@@ -6,16 +6,18 @@ import './AuthPage.css';
 export default function AuthPage({ setUser }) {
   const [showSignUp, setShowSignUp] = useState(false);
   return (
-    <main>
-      <h1>Welcome to The Inventory Tracker</h1>
-      <div className='auth-container'>
+    <>
+      <h1 className='auth-page-title'>Welcome to Inventory Tracker</h1>
+      <div className='content-container'>
         <button onClick={() => setShowSignUp(!showSignUp)} className='auth-button' >{showSignUp ? 'Log In' : 'Sign Up'}</button>
-        { showSignUp ?
-            <SignUpForm setUser={setUser} />
-            :
-            <LoginForm setUser={setUser} />
-        }
+        <div className='auth-container'>
+          { showSignUp ?
+              <SignUpForm setUser={setUser} />
+              :
+              <LoginForm setUser={setUser} />
+          }
+        </div>
       </div>
-    </main>
+    </>
   );
 }

@@ -31,34 +31,40 @@ export const AddItem = ({ getItem }) => {
   return (
     <div className="modalDiv">
       <div className="modal">
-        <form onSubmit={handleSubmit} className='item-form'>
-          <label>Product Name: </label>
-          <input
-            type="text"
-            name="productname"
-            value={item.productname}
-            onChange={handleChange}
-            required
-          />
-          <label>Quantity: </label>
-          <input
-            type="number"
-            name="quantity"
-            value={item.quantity}
-            onChange={handleChange}
-            required
-          />
-          <label>SKU: </label>
-          <input
-            type="text"
-            name="SKU"
-            value={item.SKU}
-            onChange={handleChange}
-            required
-          />
-          <button type="submit">Submit</button>
-          <button onClick={() => navigate(-1)}>Close</button>
-        </form>
+        <button onClick={() => navigate(-1)} className='close-button'>X</button>
+        <div className='form-container'>
+          <form onSubmit={handleSubmit}>
+            <label>Product Name
+              <input
+                type="text"
+                name="productname"
+                value={item.productname}
+                onChange={handleChange}
+                required
+              />
+            </label>
+            <label>Quantity
+              <input
+                type="number"
+                min='0'
+                name="quantity"
+                value={item.quantity}
+                onChange={handleChange}
+                required
+              />
+            </label>
+            <label>SKU
+              <input
+                type="text"
+                name="SKU"
+                value={item.SKU}
+                onChange={handleChange}
+                required
+              />
+            </label>
+            <button type="submit" className='button'>Submit</button>
+          </form>
+        </div>
       </div>
     </div>
   );

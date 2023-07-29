@@ -45,7 +45,7 @@ export default function LoginForm({ setUser }) {
             required
           />
           </label>
-          <button type="submit">LOG IN</button>
+          <button type="submit" className='button'>LOG IN</button>
         </form>
       </div>
       <p className="error-message">&nbsp;{error}</p>

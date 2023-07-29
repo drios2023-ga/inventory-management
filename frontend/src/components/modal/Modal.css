@@ -9,9 +9,11 @@
   align-items: center;
 }
 .modal {
+  display: flex;
+  flex-direction: column;
   background-color: #D5BDAF;
   border-radius: 5px;
-  padding: 5rem;
+  padding: 1rem;
   box-shadow: 0px 1px 10px 0px rgba(0,0,0,.2);
   margin-bottom: 11rem;
 }
