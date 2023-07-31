@@ -1,6 +1,6 @@
-import { useNavigate, Link } from "react-router-dom";
-import { useEffect, useState } from 'react';
-import { deleteItem, updateItem, getOneItem } from "../../utilities/items-service";
+import { useNavigate } from "react-router-dom";
+import { useEffect } from 'react';
+import { deleteItem, updateItem } from "../../utilities/items-service";
 import './ItemDetail.css'
 
 export default function ItemDetail({ getItem, currentItem, setCurrentItem, fetchOneItem  }) {
@@ -32,14 +32,14 @@ export default function ItemDetail({ getItem, currentItem, setCurrentItem, fetch
 
   return (
     <div className="item-detail">
-      <button onClick={() => navigate(-1)} className='close-button'>X</button>
-      <h2>{currentItem.productname}</h2>
-      <h3>
-        <span>Qty: {currentItem.quantity}</span> | <span>SKU: {currentItem.SKU}</span>
-      </h3>
-      <button onClick={() => plusMinusOne(1)}>+1</button>
-      <button onClick={() => plusMinusOne(-1)}>-1</button>
-      <button onClick={() => removeItem(currentItem._id)}>Delete</button>
+      <h1>{currentItem.productname}</h1>
+      <div className='quantity-container'>
+        <button className='button' onClick={() => plusMinusOne(-1)}>-</button>
+        <h2>Qty: {currentItem.quantity}</h2>
+        <button className='button' onClick={() => plusMinusOne(1)}>+</button>
+      </div>
+      <h3>SKU: {currentItem.SKU}</h3>
+      <button className='button' onClick={() => removeItem(currentItem._id)}>Delete</button>
     </div>
   );
 }

@@ -30,12 +30,13 @@ export default function Modal({ getItem }) {
   return (
     <div className="modalDiv">
       <div className="modal">
+      <button onClick={() => navigate(-1)} className='close-button'>X</button>
         { showForm ?
             <EditItemForm getItem={getItem} currentItem={currentItem} setCurrentItem={setCurrentItem} fetchOneItem={fetchOneItem} />
             :
             <ItemDetail getItem={getItem}  currentItem={currentItem} setCurrentItem={setCurrentItem} fetchOneItem={fetchOneItem} />
         }
-        <button onClick={() => setShowForm(!showForm)}>{showForm ? 'Item Details' : 'Edit Item'}</button>
+        <button className='button' onClick={() => setShowForm(!showForm)}>{showForm ? 'Item Details' : 'Edit Item'}</button>
       </div>
     </div>
   );
