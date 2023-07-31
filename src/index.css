@@ -3,6 +3,7 @@ html {
   background: -moz-linear-gradient(180deg, rgba(209,190,177,1) 0%, rgba(237,237,233,1) 100%);
   background: -webkit-linear-gradient(180deg, rgba(209,190,177,1) 0%, rgba(237,237,233,1) 100%);
   background: linear-gradient(180deg, rgba(209,190,177,1) 0%, rgba(237,237,233,1) 100%);
+  background-size: auto;
 }
 
 body {
