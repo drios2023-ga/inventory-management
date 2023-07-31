@@ -1,11 +1,11 @@
 .auth-page-title {
-  margin-top: 25%;
-  margin-bottom: 3rem;
-  font-size: 2.5rem;
+  margin-top: 15%;
+  margin-bottom: 10px;
+  font-size: 3rem;
 }
 
 .content-container {
-  display: flex;
+  /* display: flex; */
   justify-content: center;
   gap: 3rem;
 }
@@ -23,25 +23,24 @@
 .form-container > form {
   display: flex;
   flex-direction: column;
-  gap: .25rem;
+  gap: 0.25rem;
   width: auto;
-  background-color: #D5BDAF;
-  padding: 1rem;
+  background-color: #d5bdaf;
+  padding: 2rem;
   border-radius: 10px;
 }
-
-
 
 .form-container > form > label {
   display: flex;
   justify-content: space-between;
   gap: 1rem;
-  font-size: 1.5rem;
+  font-size: 2.0rem;
 }
 
 .form-container > form input {
   width: 12rem;
-  font-size: 1rem;
+  font-size: 1.25rem;
+  font-family: 'Poppins Light';
 }
 
 .form-container > form > button {
@@ -49,12 +48,19 @@
   align-self: center;
   width: fit-content;
   margin-top: 1rem;
+  border-radius: 5px;
+  border: none;
+  font-size: 1.5rem;
 }
 
 .auth-button {
-  height: 7rem;
-  width: 7rem;
+  height: 9rem;
+  width: 9rem;
   border-radius: 50%;
   font-size: 2rem;
   align-self: center;
+  margin-bottom: 15px;
+  background-color: #f3ebe1;
+  font-family: "Poppins Light";
+  line-height: 40px;
 }
