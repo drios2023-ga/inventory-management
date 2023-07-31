@@ -12,6 +12,10 @@
   box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.2);
 }
 
+.item-card:last-of-type{
+  margin-bottom: 20px;
+}
+
 .item-card:active {
   box-shadow: inset 0px 1px 10px 0px rgba(0, 0, 0, 0.2);
 }
