@@ -53,7 +53,7 @@ export default function EditItemForm({ getItem, currentItem, setCurrentItem, fet
           defaultValue={currentItem.SKU}
           onChange={handleChange}
         />
-        <button type="submit" className='button'>Sumbit</button>
+        <button type="submit" className='button'>Submit</button>
       </form>
     </div>
   );
