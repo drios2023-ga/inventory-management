@@ -63,7 +63,8 @@
   align-self: center;
   margin-bottom: 15px;
   background-color: #f3ebe1;
-  font-family: "Poppins Light";
+  font-family: "Poppins";
+  font-weight: 300;
   line-height: 40px;
   cursor: pointer;
 }

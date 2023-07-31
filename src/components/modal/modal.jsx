@@ -1,4 +1,4 @@
-import { useLocation, useNavigate, Link } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 import { useState, useEffect } from 'react';
 import { deleteItem, getOneItem } from "../../utilities/items-service";
 import ItemDetail from '../ItemDetail/ItemDetail';
@@ -31,12 +31,12 @@ export default function Modal({ getItem }) {
     <div className="modalDiv">
       <div className="modal">
       <button onClick={() => navigate(-1)} className='close-button'>X</button>
-        { showForm ?
-            <EditItemForm getItem={getItem} currentItem={currentItem} setCurrentItem={setCurrentItem} fetchOneItem={fetchOneItem} />
-            :
-            <ItemDetail getItem={getItem}  currentItem={currentItem} setCurrentItem={setCurrentItem} fetchOneItem={fetchOneItem} />
-        }
-        <button className='button' onClick={() => setShowForm(!showForm)}>{showForm ? 'Item Details' : 'Edit Item'}</button>
+      { showForm ?
+        <EditItemForm getItem={getItem} currentItem={currentItem} setCurrentItem={setCurrentItem} fetchOneItem={fetchOneItem} />
+        :
+        <ItemDetail getItem={getItem}  currentItem={currentItem} setCurrentItem={setCurrentItem} fetchOneItem={fetchOneItem} />
+      }
+      <button className='button' onClick={() => setShowForm(!showForm)}>{showForm ? 'Item Details' : 'Edit Item'}</button>
       </div>
     </div>
   );

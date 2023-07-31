@@ -21,7 +21,6 @@ async function getAll(req, res) {
 async function show(req, res) {
   try {
     // send one item
-    console.log(req.params.id);
     res.json(await inventory.findById(req.params.id));
   } catch (error) {
     //send error
@@ -33,7 +32,6 @@ async function newItem(req, res) {
   try {
     // create new item
     req.body.user = req.user._id;
-    console.log(req.user)
     res.json(await inventory.create(req.body));
   } catch (error) {
     //send error

@@ -1,4 +1,4 @@
-import { useNavigate, useParams, Link } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 import { getOneItem, updateItem, deleteItem } from "../../utilities/items-service";
 import { useEffect, useState } from "react";
 
@@ -21,8 +21,6 @@ export default function ItemDetail({ getItem }) {
       SKU: item.SKU,
       quantity: item.quantity+changeValue,
     }
-
-    console.log(updatedItemData);
     await updateItem(updatedItemData);
     fetchOneItem();
   }

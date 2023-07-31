@@ -19,8 +19,6 @@ export default function ItemDetail({ getItem, currentItem, setCurrentItem, fetch
       SKU: currentItem.SKU,
       quantity: currentItem.quantity+changeValue,
     }
-    
-    console.log(updatedItemData);
     await updateItem(updatedItemData);
     fetchOneItem();
     getItem();
