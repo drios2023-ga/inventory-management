@@ -1,7 +1,7 @@
 .modalDiv {
   width: 100vw;
   height: 100vh;
-  position: absolute;
+  position: fixed;
   top: 0;
   background-color: rgba(91, 112, 131, 0.4);
   display: flex;
