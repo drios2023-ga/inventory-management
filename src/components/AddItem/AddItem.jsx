@@ -34,7 +34,7 @@ export const AddItem = ({ getItem }) => {
         <button onClick={() => navigate(-1)} className='close-button'>X</button>
         <div className='form-container'>
           <form onSubmit={handleSubmit}>
-            <label>Product Name
+            <label>Product
               <input
                 type="text"
                 name="productname"
