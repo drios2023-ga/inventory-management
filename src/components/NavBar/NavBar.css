@@ -16,15 +16,21 @@ nav {
 
 nav a {
   display: flex;
+
 }
 
 header h1 {
   margin: 0;
   padding: .25rem 0;
+  white-space: nowrap;
 }
 
 @media only screen and (max-width: 600px) {
   header h1 {
-    font-size: 1.25rem;
+    font-size: 1.5rem;
+  }
+
+  nav div {
+    display: none;
   }
 }
