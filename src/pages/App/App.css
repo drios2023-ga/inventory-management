@@ -1,6 +1,5 @@
-
 html {
-  height: 115%
+  height: 140vh;
 }
 
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap");
@@ -12,9 +11,8 @@ body {
 .App {
   text-align: center;
   height: 100vh;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins Light", sans-serif;
   width: 100%;
-
 }
 
 .App-logo {
@@ -53,9 +51,9 @@ body {
 }
 
 .button {
-  padding: .5rem;
-  background-color: #E3D5CA;
-  font-family: 'Poppins', sans-serif;
+  padding: 0.5rem;
+  background-color: #e3d5ca;
+  font-family: "Poppins Light", sans-serif;
   font-size: 1.25rem;
   text-decoration: none;
   color: black;
@@ -81,10 +79,9 @@ body {
 }
 
 .close-button:hover {
-  color: rgba(0,0,0,.2);
+  color: rgba(0, 0, 0, 0.2);
 }
 
 .close-button:active {
-  box-shadow: inset 0px 1px 10px 0px rgba(0,0,0,.2);
+  box-shadow: inset 0px 1px 10px 0px rgba(0, 0, 0, 0.2);
 }
-

@@ -40,8 +40,10 @@
 .form-container > form input {
   width: 12rem;
   font-size: 1.25rem;
-  font-family: 'Poppins';
+  font-family: "Poppins Light";
   font-weight: 300;
+  border-radius: 5px;
+  border: 1px solid;
 }
 
 .form-container > form > button {
@@ -62,7 +64,7 @@
   align-self: center;
   margin-bottom: 15px;
   background-color: #f3ebe1;
-  font-family: "Poppins";
+  font-family: "Poppins Light";
   font-weight: 300;
   line-height: 40px;
   cursor: pointer;
