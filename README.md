@@ -2,7 +2,7 @@
 
 This model-view-controller MERN-stack application enables small business users to track inventory. I collaborated on the React frontend, implemented a backend RESTful API, and tested all endpoints with Postman. This API is called by React and reads/writes data to and from a MongoDB database. Technologies used include React, JavaScript, Express, and MongoDB. 
 
-To view, click the link below and logon with email david@email.com and password “test”.
+To view, click the link and logon with email david@email.com and password “test”.
 https://sei-inventory-manager-c8b2fde1ac37.herokuapp.com/
 
 ## Design
